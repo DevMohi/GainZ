@@ -7,15 +7,15 @@ import Service from '../Service/Service';
 const Services = () => {
 
     const services = [
-        { id: 1, name: "World Class Experts", description: "Learn From the best", images: services3 },
-        { id: 2, name: "Freedom", description: "24/7 Open", images: services2 },
+        { id: 1, name: "World Class Experts ", description: "Learn From the best ", images: services3 },
+        { id: 2, name: "Freedom", description: "24/7 Open ", images: services2 },
         { id: 3, name: "Support&Review", description: "Best in the town", images: services1 }
     ]
 
 
     return (
         <div className='container my-5'>
-            <h1 className='text-center'>Our Services</h1>
+            <h1 className='text-center'>Our Service Packages</h1>
             <div className="row">
                 {
                     services.map(service => <Service

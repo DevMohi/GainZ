@@ -9,11 +9,14 @@ const Service = ({ service }) => {
                 <div>
                     <div className='d-flex justify-content-around'>
                         <img src={images} alt="" />
-                        <p className='h1'>{id}</p>
+                        <p className='h1'><span style={{ color: "#b0192e" }}>0{id}</span></p>
                     </div>
                     <div className='text-center mt-3'>
                         <h4> {name} </h4>
-                        <p>{description}</p>
+                        <p className='font-weight-bold h6'>{description}</p>
+                    </div>
+                    <div className='d-flex justify-content-center align-items-center mt-2'>
+                        <button className='custom-btn'>Order Now</button>
                     </div>
                 </div>
             </div>
