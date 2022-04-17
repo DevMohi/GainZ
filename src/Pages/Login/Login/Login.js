@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Form } from 'react-bootstrap';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 
 const Login = () => {
@@ -58,11 +58,16 @@ const Login = () => {
     }
 
     const navigate = useNavigate();
+    const location = useLocation();
+    const from = location.state?.from?.pathname || "/";
 
-    if (user) {
-        navigate('/')
+    useEffect(() => {
+        if (user) {
+            navigate(from);
+        }
+    }, [user]);
 
-    }
+
     return (
         <div className='container py-2 my-5 shadow-lg p-3 mb-5 bg-body rounded '>
             <h2 className='py-3'>Login</h2>
@@ -84,7 +89,7 @@ const Login = () => {
                     <Form.Check type="checkbox" label="Check me out" />
                 </Form.Group> */}
                 <p>Dont have an account? <Link className='text-decoration-none text-info' to='/register'>Register</Link></p>
-                <button className='custom-btn  px-3 mx-auto d-block'>Register</button>
+                <button className='custom-btn  px-3 mx-auto d-block'>Login</button>
 
             </Form>
 

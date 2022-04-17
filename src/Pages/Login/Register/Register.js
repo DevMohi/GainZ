@@ -71,7 +71,7 @@ const Register = () => {
 
     if (user) {
 
-        navigate('/')
+        navigate('/');
 
     }
     return (
