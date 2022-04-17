@@ -1,0 +1,22 @@
+.about-image img{
+    width: 450px;
+}
+
+@media only screen and (max-width: 678px) {
+    .about-container{
+        flex-direction: column-reverse;
+    }
+    .about-text {
+        margin: 0 auto;
+    }
+    .about-text h1{
+        font-size: 32px;
+    }
+    .about-text p{
+        font-size: 14px;
+    }
+    .about-image img {
+        width: 100%;
+
+    }
+}
