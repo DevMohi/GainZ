@@ -9,7 +9,7 @@ const Service = ({ service }) => {
         navigate('/checkout')
     }
     return (
-        <div className='g-5 col-sm-12 col-md-6 col-lg-4 '>
+        <div className='g-5 col-sm-12 col-md-6 col-lg-4 service-container'>
             <div className='shadow-sm p-3 mb-5 bg-body rounded'>
                 <div>
                     <div className='d-flex justify-content-around'>

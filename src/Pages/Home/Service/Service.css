@@ -10,3 +10,10 @@
 .custom-btn:hover{
     background-color: #b0192d69;
 }
+
+.service-container{
+    transition: transform 0.5s;
+}
+.service-container:hover{
+    transform: translateY(10px);
+}

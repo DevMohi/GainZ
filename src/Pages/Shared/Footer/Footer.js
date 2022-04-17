@@ -9,11 +9,11 @@ const Footer = () => {
     const today = new Date();
     const year = today.getFullYear();
     return (
-        <div className='footer-container'>
+        <div className='footer-container fixed-bottom'>
             <div class="container">
                 <div class="row">
                     <div class="col text-white g-3">
-                        <div className='d-flex justify-content-center  '>
+                        <div className='d-flex justify-content-center'>
                             <h5>Gains💪</h5>
                         </div>
                     </div>
@@ -24,7 +24,7 @@ const Footer = () => {
                             <img className='px-3' src={github} alt="" />
                         </div>
                     </div>
-                    <div class="col text-white g-3">
+                    <div class="col text-white g-3 copyright-container">
                         <div className='d-flex justify-content-center'>
                             <small className='text-white pb-1'> &#169;{year} Gains, All rights reserved</small>
                         </div>

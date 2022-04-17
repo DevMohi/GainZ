@@ -4,9 +4,9 @@ import './Timing.css'
 const Timing = () => {
     return (
         <div className='timing-container'>
-            <div className='container content-container d-flex justify-content-center w-25'>
+            <div className='container content-container d-flex justify-content-center w-25 my-4'>
 
-                <div className='pt-2  mx-2 my-2'>
+                <div className='pt-2  mx-2 my-2 '>
                     <div className='table-container'>
                         <table class="table table-bordered table-hover table-dark table-responsive">
                             <tbody>
@@ -38,7 +38,7 @@ const Timing = () => {
                             </tbody>
                         </table>
                     </div>
-                    <div className='text-center text-white'>
+                    <div className='text-center text-white status-container ' style={{ marginBottom: '40px' }} >
                         <small>
                             Status : <span className='custom-clr'>**</span> Old Week
                         </small>
