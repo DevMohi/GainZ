@@ -7,8 +7,8 @@ import Service from '../Service/Service';
 const Services = () => {
 
     const services = [
-        { id: 1, name: "World Class Expert ", description: "Learn Personally From Me, and be the best", images: services3, price: "$100" },
-        { id: 2, name: "Freedom Pack", description: "Get Tips From Me and workout yourself", images: services2, price: "50$" },
+        { id: 1, name: "World Class Expert ", description: "Learn Personally From Me, and be the best version of yourself", images: services3, price: "$100" },
+        { id: 2, name: "Freedom Pack", description: "Get Tips From Me and workout yourself, be brave!!", images: services2, price: "50$" },
         { id: 3, name: "Support&Review", description: "Get Reviewed every week on your progress by me", images: services1, price: "30$" }
     ]
 

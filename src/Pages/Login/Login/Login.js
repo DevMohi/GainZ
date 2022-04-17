@@ -3,6 +3,7 @@ import { Form } from 'react-bootstrap';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Login = () => {
     const [userInfo, setUserInfo] = useState({
@@ -69,7 +70,7 @@ const Login = () => {
 
 
     return (
-        <div className='container py-2 my-5 shadow-lg p-3 mb-5 bg-body rounded '>
+        <div className='container py-2 my-5 shadow-lg p-3 mb-5 bg-body rounded w-50 '>
             <h2 className='py-3'>Login</h2>
             <Form onSubmit={handleLogin}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -92,6 +93,7 @@ const Login = () => {
                 <button className='custom-btn  px-3 mx-auto d-block'>Login</button>
 
             </Form>
+            <SocialLogin></SocialLogin>
 
         </div>
     );

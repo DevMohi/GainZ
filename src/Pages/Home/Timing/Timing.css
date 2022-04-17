@@ -1,0 +1,26 @@
+.custom-clr{
+    color: #e41531;
+}
+
+.timing-container{
+    background-color: #151c22;
+}
+
+@media only screen and (max-width: 678px) {
+    .content-container{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        
+    }
+
+    .table-container{
+        width: 100px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .table-container td , th{
+        font-size: 10px;
+    }
+}   
