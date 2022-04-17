@@ -13,8 +13,6 @@ function App() {
   return (
     <div>
       <Header></Header>
-
-      <h1 className='px-3 text-center'>Welcome To Gains<FontAwesomeIcon icon={faCoffee}></FontAwesomeIcon></h1>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/checkout' element={<Checkout></Checkout>}></Route>
