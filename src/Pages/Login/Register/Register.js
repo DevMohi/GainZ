@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { Button, Form } from 'react-bootstrap';
+import { Form } from 'react-bootstrap';
 import auth from '../../../firebase.init';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth'
 import { Link, useNavigate } from 'react-router-dom';
-import toast, { Toaster } from 'react-hot-toast';
+import SocialLogin from '../SocialLogin/SocialLogin';
+
 
 const Register = () => {
     const [userInfo, setUserInfo] = useState({
@@ -103,8 +104,10 @@ const Register = () => {
                 <button className='custom-btn  px-3 mx-auto d-block'>Register</button>
 
             </Form>
-            <Toaster></Toaster>
+            <SocialLogin></SocialLogin>
         </div>
+
+
     );
 };
 
