@@ -4,6 +4,7 @@ import auth from '../../../firebase.init';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth'
 import { Link, useNavigate } from 'react-router-dom';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import Loading from '../../Shared/Loading/Loading';
 
 
 const Register = () => {
@@ -72,8 +73,12 @@ const Register = () => {
 
     if (user) {
 
-        navigate('/');
+        navigate('/', { replace: true });
 
+    }
+
+    if (loading) {
+        return <Loading></Loading>
     }
     return (
         <div className='container py-2 my-5 shadow-lg p-3 mb-5 bg-body rounded w-50'>

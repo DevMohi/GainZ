@@ -3,6 +3,7 @@ import { Form } from 'react-bootstrap';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import Loading from '../../Shared/Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Login = () => {
@@ -21,6 +22,8 @@ const Login = () => {
         loading,
         hookError,
     ] = useSignInWithEmailAndPassword(auth);
+
+
 
     const handleEmail = (e) => {
         const emailRegex = /\S+@\S+\.\S+/;
@@ -51,6 +54,7 @@ const Login = () => {
 
 
 
+
     console.log(userInfo.email)
 
     const handleLogin = (e) => {
@@ -62,12 +66,13 @@ const Login = () => {
     const location = useLocation();
     const from = location.state?.from?.pathname || "/";
 
-    useEffect(() => {
-        if (user) {
-            navigate(from);
-        }
-    }, [user]);
+    if (user) {
+        navigate(from, { replace: true });
+    }
 
+    if (loading) {
+        return <Loading></Loading>
+    }
 
     return (
         <div className='container py-2 my-5 shadow-lg p-3 mb-5 bg-body rounded w-50 '>

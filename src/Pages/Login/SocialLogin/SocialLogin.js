@@ -5,6 +5,7 @@ import { useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/a
 import auth from '../../../firebase.init';
 import { useNavigate } from 'react-router-dom';
 import './SocialLogin.css'
+import Loading from '../../Shared/Loading/Loading';
 const SocialLogin = () => {
     const navigate = useNavigate();
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
@@ -14,6 +15,10 @@ const SocialLogin = () => {
     if (user1 || user) {
         navigate('/')
         console.log('logged in')
+    }
+
+    if (loading || loading1) {
+        return <Loading></Loading>
     }
 
     return (
