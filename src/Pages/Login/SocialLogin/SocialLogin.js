@@ -21,10 +21,6 @@ const SocialLogin = () => {
 
 
 
-    if (loading || loading1) {
-        return <Loading></Loading>
-    }
-
     return (
         <div className='social-button-container'>
             <div className='d-flex align-items-center justify-content-center'>
