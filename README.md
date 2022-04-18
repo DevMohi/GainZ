@@ -18,7 +18,8 @@ Open [https://axngaming.netlify.app/](https://axngaming.netlify.app/) to view th
 
 - The Website has login and logout , also the user can login with google and github logins , this has been done through firebase.
 - You can order the services by clicking on order now
-- The page doesnt have any reloading , thanks to react router Links.
+- The Website doesnt have any reloading , thanks to react router Links.
+- Loading has been implemented
 
 # Frameworks and Technologies Used
 

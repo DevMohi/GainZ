@@ -17,9 +17,7 @@ const Header = () => {
     const logout = () => {
         signOut(auth);
     }
-    if (user) {
-        console.log(user)
-    }
+
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>

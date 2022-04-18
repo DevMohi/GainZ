@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import { Form } from 'react-bootstrap';
 import auth from '../../../firebase.init';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth'
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import Loading from '../../Shared/Loading/Loading';
+import { Toaster } from 'react-hot-toast';
 
 
 const Register = () => {
@@ -70,11 +71,11 @@ const Register = () => {
     }
 
     const navigate = useNavigate();
+    const location = useLocation();
+    const from = location.state?.from?.pathname || "/";
 
     if (user) {
-
-        navigate('/', { replace: true });
-
+        navigate(from, { replace: true });
     }
 
     if (loading) {
@@ -110,6 +111,7 @@ const Register = () => {
 
             </Form>
             <SocialLogin></SocialLogin>
+            
         </div>
 
 

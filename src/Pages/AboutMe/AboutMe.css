@@ -5,6 +5,7 @@
 @media only screen and (max-width: 678px) {
     .about-container{
         flex-direction: column-reverse;
+        
     }
     .about-text {
         margin: 0 auto;
@@ -13,10 +14,20 @@
         font-size: 32px;
     }
     .about-text p{
-        font-size: 14px;
+        font-size: 12px;
     }
     .about-image img {
         width: 100%;
 
+    }
+
+    .icons-container{
+        display: flex;
+        justify-content: center;
+    }
+
+    .icons-container img{
+        height: 20px;
+        margin-bottom: 20px;
     }
 }

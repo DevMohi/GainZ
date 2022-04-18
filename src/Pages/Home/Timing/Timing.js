@@ -4,6 +4,7 @@ import './Timing.css'
 const Timing = () => {
     return (
         <div className='timing-container'>
+            
             <div className='container content-container d-flex justify-content-center w-25 my-4'>
 
                 <div className='pt-2  mx-2 my-2 '>
@@ -53,7 +54,9 @@ const Timing = () => {
                 <div className='mx-4 d-flex pt-2 text-container'>
                     <div>
                         <h2 className='text-white'><span className='custom-clr'>MY</span> <br />Training <br />SCHEDULE</h2>
-                        <small className='text-white'>All my courses are <br /> being held weekly in the <br />following days and hours</small>
+                        <div className='text-small-container'>
+                            <small className='text-white'>All my courses are <br /> being held weekly in the <br />following days and hours</small>
+                        </div>
                     </div>
                 </div>
             </div>

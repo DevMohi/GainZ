@@ -5,8 +5,8 @@ import './Service.css'
 const Service = ({ service }) => {
     const { images, name, description, id, price } = service;
     const navigate = useNavigate();
-    const navigateToCheckout = (id) => {
-        navigate('/checkout')
+    const navigateToCheckout = (name) => {
+        navigate(`/checkout/${name}`)
     }
     return (
         <div className='g-5 col-sm-12 col-md-6 col-lg-4 service-container'>
@@ -22,7 +22,7 @@ const Service = ({ service }) => {
                         <h2>{price}</h2>
                     </div>
                     <div className='d-flex justify-content-center align-items-center mt-2'>
-                        <button onClick={() => navigateToCheckout(id)} className='custom-btn'>Order Now</button>
+                        <button onClick={() => navigateToCheckout(name)} className='custom-btn'>Order Now</button>
                     </div>
                 </div>
             </div>

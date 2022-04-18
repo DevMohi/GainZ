@@ -3,26 +3,31 @@ import google from '../../../images/icons/google.png'
 import github from '../../../images/icons/github.png'
 import { useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import './SocialLogin.css'
 import Loading from '../../Shared/Loading/Loading';
+
 const SocialLogin = () => {
     const navigate = useNavigate();
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
 
     const [signInWithGithub, user1, loading1, error1] = useSignInWithGithub(auth);
 
-    if (user1 || user) {
-        navigate('/')
-        console.log('logged in')
+    const location = useLocation();
+    const from = location.state?.from?.pathname || "/";
+
+    if (user || user1) {
+        navigate(from, { replace: true });
     }
+
+
 
     if (loading || loading1) {
         return <Loading></Loading>
     }
 
     return (
-        <div>
+        <div className='social-button-container'>
             <div className='d-flex align-items-center justify-content-center'>
                 <div style={{ height: "1px" }} className='bg-dark w-25'></div>
                 <div className='px-3 pb-1'>or</div>

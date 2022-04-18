@@ -4,23 +4,52 @@
 
 .timing-container{
     background-color: #151c22;
+   
+}
+.table-container,.text-container{
+    margin-top: 22px;
 }
 
 @media only screen and (max-width: 678px) {
+    .timing-container::before{
+        content: "My Training Time";
+        color: white;
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
     .content-container{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: center;
         
     }
 
     .table-container{
+        position: relative;
+        top: -20px;
         width: 100px;
         display: flex;
         justify-content: center;
     }
 
+    .status-container small{
+        position: relative;
+        top: -10px;
+        font-size: 10px;
+    }
+
     .table-container td , th{
         font-size: 10px;
     }
+
+    .text-container h2{
+        display: none;
+    }
+
+    .text-small-container{
+        display: none;
+    }
+
 }   
