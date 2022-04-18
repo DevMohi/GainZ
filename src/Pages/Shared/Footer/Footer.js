@@ -14,7 +14,7 @@ const Footer = () => {
                 <div class="row">
                     <div class="col text-white g-3">
                         <div className='d-flex justify-content-center'>
-                            <h5>Gains💪</h5>
+                            <h5>Gain<span className='custom-clr'>Z</span></h5>
                         </div>
                     </div>
                     <div class="col-5 text-white g-3 icons">

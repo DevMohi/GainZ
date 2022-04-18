@@ -1,6 +1,6 @@
 # Project Name
 
-Gains
+GainZ
 
 ## Project Link
 

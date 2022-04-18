@@ -102,10 +102,11 @@ const Login = () => {
                     {errors?.email && <p className='text-danger'>{errors.email}</p>}
                 </Form.Group>
 
-                <Form.Group className="mb-3" controlId="formBasicPassword">
+                <Form.Group className="mb-3 relative" controlId="formBasicPassword">
 
                     <Form.Control type="password" placeholder="Password" required onChange={handlePass} />
                     {errors?.password && <p className='text-danger'>{errors.password}</p>}
+
                 </Form.Group>
                 {hookError && <p className='text-danger'>{hookError.message}</p>}
 
