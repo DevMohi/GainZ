@@ -4,7 +4,7 @@ GainZ
 
 ## Project Link
 
-Open [https://axngaming.netlify.app/](https://axngaming.netlify.app/) to view the live site in your browser.
+Open [https://gains-bd2ce.web.app/](https://gains-bd2ce.web.app/) to view the live site in your browser.
 
 - Responsive for both dekstop and pc
 
