@@ -1,0 +1,20 @@
+.title {
+    text-align: center;
+    
+    position: relative;
+    line-height: 70px;
+    color: #555;
+}
+
+.title::after {
+    content: '';
+    background: #ff523b;
+    width: 100px;
+    height: 3px;
+    position: absolute;
+    border-radius: 5px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+

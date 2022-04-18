@@ -62,9 +62,9 @@ const Checkout = () => {
                                 <Form.Control
                                     type="text"
                                     placeholder={user ? user?.displayName : 'user'}
-                                    aria-describedby="inputGroupPrepend"
                                     disabled
-                                    required
+                                    aria-describedby="inputGroupPrepend"
+                                    
                                 />
                                 <Form.Control.Feedback type="invalid">
                                     Please choose a username.

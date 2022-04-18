@@ -95,7 +95,7 @@ const Login = () => {
 
         <div className='container py-2 my-5 shadow-lg p-3 mb-5 bg-body rounded w-50 '>
             <h2 className='py-3'>Login</h2>
-            <Form onSubmit={handleLogin}>
+            <Form className='' onSubmit={handleLogin}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
 
                     <Form.Control type="email" placeholder="Enter email" required onChange={handleEmail} />

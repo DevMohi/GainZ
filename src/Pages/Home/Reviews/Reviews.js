@@ -1,5 +1,6 @@
 import React from 'react';
 import Review from '../Review/Review';
+import './Reviews.css'
 
 const reviews = [
     {
@@ -7,7 +8,7 @@ const reviews = [
         "name": "Leanne Figueroa",
         "img": "https://randomuser.me/api/portraits/men/75.jpg",
         "rating": "⭐⭐⭐⭐⭐",
-        "desc": "If you are a fan of getting trained by the best this gym should be in your list as it is ."
+        "desc": "If you are a fan of getting trained by the best this gym should be in your list as it is the best ."
     },
     {
         "id": "624b6848ac9cfa0556e7c70b",
@@ -30,7 +31,7 @@ const reviews = [
 const Reviews = () => {
     return (
         <div className='container my-5'>
-            <h1 className='custom-clr display-5 text-center'>Testimonials!</h1>
+            <h1 className='custom-clr display-5 text-center title'>Testimonials!</h1>
             <div className="row">
                 {
                     reviews.map(review => <Review

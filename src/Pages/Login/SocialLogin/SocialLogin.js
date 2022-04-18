@@ -6,7 +6,6 @@ import auth from '../../../firebase.init';
 import { useLocation, useNavigate } from 'react-router-dom';
 import './SocialLogin.css'
 import Loading from '../../Shared/Loading/Loading';
-
 const SocialLogin = () => {
     const navigate = useNavigate();
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);

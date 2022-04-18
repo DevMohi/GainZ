@@ -37,7 +37,7 @@ const Header = () => {
                     </Nav>
                     <Nav>
                         {
-                            user && <Nav.Link className='text-white'>Hi {user.displayName}😎</Nav.Link>
+                            user && <Nav.Link className='text-white'>Hi {user.displayName ? user.displayName : 'user'}😎</Nav.Link>
                         }
                     </Nav>
                 </Navbar.Collapse>

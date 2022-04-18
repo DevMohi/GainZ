@@ -22,7 +22,14 @@ const Blog = () => {
                         Why are you using firebase? What other options do you have to implement authentication?
                     </p></Accordion.Header>
                     <Accordion.Body>
-                        <p>Google Firebase offers plethora of features, it is a go to backend development tool both for web and mobile apps. Further, it reduces the development workload and time, also its simple, lightweight, friendly and industrially recognized.All this helps developers enhance their apps based on demands.</p>
+                        <p>Google Firebase offers plethora of features, it is a go to backend development tool both for web and mobile apps. Further, it reduces the development workload and time, also its simple, lightweight, friendly and industrially recognized.All this helps developers enhance their apps based on demands. Alrernatives to Firebase :
+                            <ul>
+                                <li>Parse</li>
+                                <li>Back4App</li>
+                                <li>AWS Amplify</li>
+                                <li>Couchbase</li>
+                            </ul>
+                        </p>
                     </Accordion.Body>
                 </Accordion.Item>
 

@@ -26,3 +26,5 @@ Open [https://axngaming.netlify.app/](https://axngaming.netlify.app/) to view th
 - React Firebase Hooks
 - Google Firebase
 - React Router
+- React Toastify
+- React
