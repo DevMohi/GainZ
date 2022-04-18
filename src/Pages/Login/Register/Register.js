@@ -106,7 +106,7 @@ const Register = () => {
                 {/* <Form.Group className="mb-3" controlId="formBasicCheckbox">
                     <Form.Check type="checkbox" label="Check me out" />
                 </Form.Group> */}
-                <p>Already Have an account? <Link className='text-decoration-none text-info' to='/login'>Login</Link></p>
+                <p>Already Have an account? <Link className='text-decoration-none text-primary' to='/login'>Login</Link></p>
                 <button className='custom-btn  px-3 mx-auto d-block'>Register</button>
 
             </Form>

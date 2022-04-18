@@ -113,7 +113,7 @@ const Login = () => {
                 {/* <Form.Group className="mb-3" controlId="formBasicCheckbox">
                     <Form.Check type="checkbox" label="Check me out" />
                 </Form.Group> */}
-                <p>Dont have an account? <Link className='text-decoration-none text-info' to='/register'>Register</Link></p>
+                <p>Dont have an account? <Link className='text-decoration-none text-primary' to='/register'>Register</Link></p>
                 <p>Forgot Password?<span className='text-success reset-link' onClick={resetPassword}>Reset</span></p>
                 <button className='custom-btn  px-3 mx-auto d-block'>Login</button>
 
